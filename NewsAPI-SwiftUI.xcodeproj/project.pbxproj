@@ -16,6 +16,7 @@
 		2B75465A24A2440200C4DC46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B75465824A2440200C4DC46 /* LaunchScreen.storyboard */; };
 		2B75466524A2440200C4DC46 /* NewsAPI_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75466424A2440200C4DC46 /* NewsAPI_SwiftUITests.swift */; };
 		2B75467024A2440200C4DC46 /* NewsAPI_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75466F24A2440200C4DC46 /* NewsAPI_SwiftUIUITests.swift */; };
+		2B75468624A268C000C4DC46 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75468524A268C000C4DC46 /* WebServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2B75466B24A2440200C4DC46 /* NewsAPI-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NewsAPI-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B75466F24A2440200C4DC46 /* NewsAPI_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		2B75467124A2440200C4DC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B75468524A268C000C4DC46 /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		2B75467F24A25D1600C4DC46 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2B75468524A268C000C4DC46 /* WebServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B75464B24A243FE00C4DC46 /* AppDelegate.swift in Sources */,
+				2B75468624A268C000C4DC46 /* WebServices.swift in Sources */,
 				2B75464D24A243FE00C4DC46 /* SceneDelegate.swift in Sources */,
 				2B75465224A243FE00C4DC46 /* ContentView.swift in Sources */,
 				2B75465024A243FE00C4DC46 /* NewsAPI_SwiftUI.xcdatamodeld in Sources */,
