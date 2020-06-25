@@ -8,14 +8,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView : View {
+    
+    @ObservedObject var model = ArticleListViewModel()
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        NavigationView {
+            BitcoinListView(articleViewModel: model.article)
+                .navigationBarTitle("News Feed")
+        }
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
