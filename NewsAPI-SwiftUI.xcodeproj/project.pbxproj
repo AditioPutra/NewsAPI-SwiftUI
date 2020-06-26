@@ -21,8 +21,6 @@
 		2B75468A24A2697300C4DC46 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75468924A2697300C4DC46 /* Articles.swift */; };
 		2B75468D24A39AB800C4DC46 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B75468C24A39AB800C4DC46 /* SDWebImageSwiftUI */; };
 		2B75468F24A3C0F300C4DC46 /* BitcoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */; };
-		2B75469A24A4D90100C4DC46 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75469924A4D90100C4DC46 /* ImageLoader.swift */; };
-		2B75469C24A4D92200C4DC46 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75469B24A4D92200C4DC46 /* URLImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +60,6 @@
 		2B75468724A2696600C4DC46 /* BitcoinNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinNewsViewModel.swift; sourceTree = "<group>"; };
 		2B75468924A2697300C4DC46 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinListView.swift; sourceTree = "<group>"; };
-		2B75469924A4D90100C4DC46 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		2B75469B24A4D92200C4DC46 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,8 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				2B75468524A268C000C4DC46 /* WebServices.swift */,
-				2B75469924A4D90100C4DC46 /* ImageLoader.swift */,
-				2B75469B24A4D92200C4DC46 /* URLImage.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -333,9 +327,7 @@
 				2B75464B24A243FE00C4DC46 /* AppDelegate.swift in Sources */,
 				2B75468624A268C000C4DC46 /* WebServices.swift in Sources */,
 				2B75464D24A243FE00C4DC46 /* SceneDelegate.swift in Sources */,
-				2B75469C24A4D92200C4DC46 /* URLImage.swift in Sources */,
 				2B75465224A243FE00C4DC46 /* ContentView.swift in Sources */,
-				2B75469A24A4D90100C4DC46 /* ImageLoader.swift in Sources */,
 				2B75465024A243FE00C4DC46 /* NewsAPI_SwiftUI.xcdatamodeld in Sources */,
 				2B75468A24A2697300C4DC46 /* Articles.swift in Sources */,
 				2B75468F24A3C0F300C4DC46 /* BitcoinListView.swift in Sources */,
