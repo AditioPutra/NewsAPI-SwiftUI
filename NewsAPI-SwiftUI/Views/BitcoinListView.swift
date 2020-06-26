@@ -32,13 +32,16 @@ struct BitcoinListView: View {
                     
                 }
                 
-              
-                
-            }.padding(.vertical, 15)
-        }
-        
+                WebImage(url: URL(string: articleViewModels.urlToImage)!, options: .highPriority, context: nil)
+                    .resizable()
+                    .frame(width: 110, height: 135)
+                    .cornerRadius(20)
+            }
+        }.padding(.vertical, 15)
     }
+    
 }
+
 
 //struct BitcoinListView_Previews: PreviewProvider {
 //    static var previews: some View {

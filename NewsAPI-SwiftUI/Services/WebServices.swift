@@ -12,7 +12,7 @@ class Webservice {
     //Ned Generate API_Key
     let API_KEY = ""
     func getTopHeadlineNews(completion: @escaping ([Article]?) -> ()) {
-        guard let url = URL(string: "https://newsapi.org/v2/top-headlines?country=us&apiKey=\(API_KEY)")  else  {
+        guard let url = URL(string: "http://newsapi.org/v2/everything?q=apple&from=2020-06-25&to=2020-06-25&sortBy=popularity&apiKey=\(API_KEY)")  else  {
             completion(nil)
             return
         }
