@@ -21,6 +21,7 @@
 		2B75468A24A2697300C4DC46 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75468924A2697300C4DC46 /* Articles.swift */; };
 		2B75468D24A39AB800C4DC46 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B75468C24A39AB800C4DC46 /* SDWebImageSwiftUI */; };
 		2B75468F24A3C0F300C4DC46 /* BitcoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */; };
+		2B75471B24A9B6A900C4DC46 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75471A24A9B6A900C4DC46 /* ActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		2B75468724A2696600C4DC46 /* BitcoinNewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinNewsViewModel.swift; sourceTree = "<group>"; };
 		2B75468924A2697300C4DC46 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinListView.swift; sourceTree = "<group>"; };
+		2B75471A24A9B6A900C4DC46 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		2B75464924A243FE00C4DC46 /* NewsAPI-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				2B75471924A9B67D00C4DC46 /* Extension+UIKit */,
 				2B75468024A25D1E00C4DC46 /* Views */,
 				2B75467F24A25D1600C4DC46 /* Services */,
 				2B75467E24A25D0700C4DC46 /* ViewModels */,
@@ -183,6 +186,14 @@
 				2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		2B75471924A9B67D00C4DC46 /* Extension+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2B75471A24A9B6A900C4DC46 /* ActivityIndicatorView.swift */,
+			);
+			path = "Extension+UIKit";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 				2B75464D24A243FE00C4DC46 /* SceneDelegate.swift in Sources */,
 				2B75465224A243FE00C4DC46 /* ContentView.swift in Sources */,
 				2B75465024A243FE00C4DC46 /* NewsAPI_SwiftUI.xcdatamodeld in Sources */,
+				2B75471B24A9B6A900C4DC46 /* ActivityIndicatorView.swift in Sources */,
 				2B75468A24A2697300C4DC46 /* Articles.swift in Sources */,
 				2B75468F24A3C0F300C4DC46 /* BitcoinListView.swift in Sources */,
 			);

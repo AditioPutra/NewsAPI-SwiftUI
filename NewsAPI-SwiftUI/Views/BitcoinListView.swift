@@ -10,7 +10,7 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct BitcoinListView: View {
-    
+    @ObservedObject var model = ArticleListViewModel()
     let articleViewModel: [ArticleViewModel]
     
     init(articleViewModel: [ArticleViewModel]) {
@@ -18,33 +18,36 @@ struct BitcoinListView: View {
     }
     
     var body: some View {
-        List(self.articleViewModel) { articleViewModels in
-            
-            HStack(spacing: 15) {
-                
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(articleViewModels.title)
-                        .lineLimit(nil)
-                    
-                    Text(articleViewModels.description)
-                        .foregroundColor(.secondary)
-                        .lineLimit(nil)
-                    
-                }
-                
-                WebImage(url: URL(string: articleViewModels.urlToImage)!, options: .highPriority, context: nil)
-                    .resizable()
-                    .frame(width: 110, height: 135)
-                    .cornerRadius(20)
+        VStack {
+            if model.loading {
+                ActivityIndicatorView()
+            } else {
+                List(self.articleViewModel) { articleViewModels in
+                    HStack(spacing: 15) {
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(articleViewModels.title)
+                                .lineLimit(nil)
+                            
+                            Text(articleViewModels.description)
+                                .foregroundColor(.secondary)
+                                .lineLimit(nil)
+                            
+                        }
+                        
+                        WebImage(url: URL(string: articleViewModels.urlToImage)!, options: .highPriority, context: nil)
+                            .resizable()
+                            .indicator(.activity)
+                            .frame(width: 110, height: 135)
+                            .cornerRadius(20)
+                        
+                        
+                    }
+                }.padding(.vertical, 15)
             }
-        }.padding(.vertical, 15)
+            
+            
+        }
     }
     
 }
 
-
-//struct BitcoinListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BitcoinListView()
-//    }
-//}

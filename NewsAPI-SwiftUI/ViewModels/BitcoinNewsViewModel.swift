@@ -6,12 +6,11 @@
 //  Copyright © 2020 Aditio Dharma Putra. All rights reserved.
 //
 
-import SwiftUI
 import Combine
 import Foundation
 
 class ArticleListViewModel: ObservableObject {
-    
+    @Published var loading = false
     @Published var article = [ArticleViewModel]()
     
     init() {
@@ -19,9 +18,11 @@ class ArticleListViewModel: ObservableObject {
     }
     
     func fetchBitcoinNews() {
+        loading = true
         Webservice().getTopHeadlineNews { article in
             if let article = article {
                 self.article = article.map(ArticleViewModel.init)
+                self.loading = false
             }
         }
     }
