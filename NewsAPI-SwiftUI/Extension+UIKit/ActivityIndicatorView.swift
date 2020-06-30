@@ -6,18 +6,15 @@
 //  Copyright © 2020 Aditio Dharma Putra. All rights reserved.
 //
 
-import UIKit
 import SwiftUI
 
 struct ActivityIndicatorView: UIViewRepresentable {
     
+    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
+    
     func makeUIView(context: Context) -> UIActivityIndicatorView {
-        return UIActivityIndicatorView(style: .large)
+        let view = UIActivityIndicatorView(style: .large)
+        view.startAnimating()
+        return view
     }
-    
-    func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
-        uiView.hidesWhenStopped = true
-        uiView.startAnimating()
-    }
-    
 }

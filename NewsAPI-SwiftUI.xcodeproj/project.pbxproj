@@ -22,6 +22,8 @@
 		2B75468D24A39AB800C4DC46 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2B75468C24A39AB800C4DC46 /* SDWebImageSwiftUI */; };
 		2B75468F24A3C0F300C4DC46 /* BitcoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */; };
 		2B75471B24A9B6A900C4DC46 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75471A24A9B6A900C4DC46 /* ActivityIndicatorView.swift */; };
+		2B75471D24A9E81100C4DC46 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75471C24A9E81100C4DC46 /* WebView.swift */; };
+		2B75471F24A9EBEA00C4DC46 /* DetailWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75471E24A9EBEA00C4DC46 /* DetailWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		2B75468924A2697300C4DC46 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinListView.swift; sourceTree = "<group>"; };
 		2B75471A24A9B6A900C4DC46 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		2B75471C24A9E81100C4DC46 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		2B75471E24A9EBEA00C4DC46 /* DetailWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 			children = (
 				2B75465124A243FE00C4DC46 /* ContentView.swift */,
 				2B75468E24A3C0F300C4DC46 /* BitcoinListView.swift */,
+				2B75471E24A9EBEA00C4DC46 /* DetailWebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2B75471A24A9B6A900C4DC46 /* ActivityIndicatorView.swift */,
+				2B75471C24A9E81100C4DC46 /* WebView.swift */,
 			);
 			path = "Extension+UIKit";
 			sourceTree = "<group>";
@@ -335,9 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B75468824A2696600C4DC46 /* BitcoinNewsViewModel.swift in Sources */,
+				2B75471D24A9E81100C4DC46 /* WebView.swift in Sources */,
 				2B75464B24A243FE00C4DC46 /* AppDelegate.swift in Sources */,
 				2B75468624A268C000C4DC46 /* WebServices.swift in Sources */,
 				2B75464D24A243FE00C4DC46 /* SceneDelegate.swift in Sources */,
+				2B75471F24A9EBEA00C4DC46 /* DetailWebView.swift in Sources */,
 				2B75465224A243FE00C4DC46 /* ContentView.swift in Sources */,
 				2B75465024A243FE00C4DC46 /* NewsAPI_SwiftUI.xcdatamodeld in Sources */,
 				2B75471B24A9B6A900C4DC46 /* ActivityIndicatorView.swift in Sources */,

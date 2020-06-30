@@ -23,29 +23,31 @@ struct BitcoinListView: View {
                 ActivityIndicatorView()
             } else {
                 List(self.articleViewModel) { articleViewModels in
-                    HStack(spacing: 15) {
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(articleViewModels.title)
-                                .lineLimit(nil)
+                    NavigationLink(destination: DetailView(url: articleViewModels.url)) {
+                        HStack(spacing: 15) {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text(articleViewModels.title)
+                                    .lineLimit(nil)
+                                
+                                Text(articleViewModels.description)
+                                    .foregroundColor(.secondary)
+                                    .lineLimit(nil)
+                                
+                            }
                             
-                            Text(articleViewModels.description)
-                                .foregroundColor(.secondary)
-                                .lineLimit(nil)
+                            WebImage(url: URL(string: articleViewModels.urlToImage)!, options: .highPriority, context: nil)
+                                .resizable()
+                                .indicator(.activity)
+                                .frame(width: 110, height: 135)
+                                .cornerRadius(20)
+                            
                             
                         }
-                        
-                        WebImage(url: URL(string: articleViewModels.urlToImage)!, options: .highPriority, context: nil)
-                            .resizable()
-                            .indicator(.activity)
-                            .frame(width: 110, height: 135)
-                            .cornerRadius(20)
-                        
-                        
                     }
-                }.padding(.vertical, 15)
+                    .buttonStyle(PlainButtonStyle())
+                    .padding(.vertical, 15)
+                }
             }
-            
-            
         }
     }
     
