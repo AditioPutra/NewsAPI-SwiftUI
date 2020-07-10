@@ -38,7 +38,7 @@ struct BitcoinListView: View {
                             WebImage(url: URL(string: articleViewModels.urlToImage)!, options: .highPriority, context: nil)
                                 .resizable()
                                 .indicator(.activity)
-                                .frame(width: 110, height: 135)
+                                .frame(width: 150, height: 150)
                                 .cornerRadius(20)
                             
                             
